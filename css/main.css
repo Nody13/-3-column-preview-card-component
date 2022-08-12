@@ -1,0 +1,157 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (min-width: 1500px) {
+    body {
+        width: 1440px;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        width: 375px;
+    }
+}
+
+.container {
+    margin: 20px auto;
+    width: 920px;
+    display: flex;
+    z-index: -3;
+}
+
+@media (max-width: 390px) {
+    .container {
+        flex-direction: column;
+        width: 375px;
+    }
+    .container .col {
+        border-radius: 8px;
+    }
+}
+
+.container .col {
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: -2;
+}
+
+.container .one {
+    background-color: #E28625;
+    border-radius: 8px 0 0 8px;
+}
+
+.container .two {
+    background-color: #006971;
+}
+
+.container .three {
+    background-color: #004140;
+    border-radius: 0 8px 8px 0;
+}
+
+.container .col header {
+    position: relative;
+}
+
+
+.container .col header i {
+    z-index: 2;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container .one header i {
+    color: #FFD473;
+}
+
+.container .two header i {
+    color: #26B5C0;
+}
+
+.container .three header i {
+    color: #19B89D;
+}
+
+.container .col header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #979797;
+    opacity: .2014;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.container .col h1 {
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%);
+}
+.container .col p {
+    font-size: 15;
+    line-height: 1.4;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.container .col button {
+    width: 146px;
+    padding: 17px 20px;
+    border-radius: 22px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.container .one button {
+    color: #E28625;
+}
+
+.container .two button {
+    color: #006971;
+}
+
+.container .three button {
+    color: #004140;
+}
+
+.container .one button:hover {
+    background-color: #E28625;
+}
+
+
+.container .two button:hover {
+    background-color: #006971;
+    font-size: 20px;
+}
+
+.container .three .b-3:hover {
+    background-color: #004140;
+}
+
+footer {
+    text-align: center;
+}
